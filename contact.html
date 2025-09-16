@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تواصل معنا | شركة التأسيس والتشطيب</title>
+  <meta name="description" content="اتصل بنا أو راسلنا على واتساب لطلب معاينة مجانية وعرض سعر.">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <a href="index.html" class="back">← الرئيسية</a>
+    <h1>تواصل معنا</h1>
+  </div>
+
+  <main class="container section contact-page">
+    <div class="contact-cards">
+      <a class="contact-card" href="tel:+201000000000">
+        <div class="icon">📞</div>
+        <div>
+          <h3>اتصال مباشر</h3>
+          <p>+20 100 000 0000</p>
+        </div>
+      </a>
+      <a class="contact-card" target="_blank" rel="noopener" href="https://wa.me/201000000000">
+        <div class="icon">💬</div>
+        <div>
+          <h3>واتساب</h3>
+          <p>رد سريع خلال ساعات العمل</p>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="icon">📍</div>
+        <div>
+          <h3>العنوان</h3>
+          <p>القاهرة - مصر</p>
+        </div>
+      </div>
+    </div>
+
+    <form id="contactForm" class="form">
+      <div class="form-row">
+        <label>الاسم الكامل
+          <input required name="name" placeholder="الاسم">
+        </label>
+        <label>رقم الهاتف
+          <input required name="phone" placeholder="مثال: 01000000000" inputmode="tel">
+        </label>
+      </div>
+      <label>الخدمة المطلوبة
+        <select name="service">
+          <option>تشطيب كامل</option>
+          <option>نصف تشطيب</option>
+          <option>تأسيس كهرباء/سباكة</option>
+          <option>جبسون بورد</option>
+          <option>دهانات</option>
+          <option>صيانة</option>
+          <option>أخرى</option>
+        </select>
+      </label>
+      <label>وصف مختصر
+        <textarea name="message" rows="5" placeholder="اكتب تفاصيل المشروع والموقع والمساحة..."></textarea>
+      </label>
+
+      <!-- ملاحظة: يمكنك ربط النموذج بـ Formspree أو Netlify Forms أو Backend بسيط -->
+      <button class="btn btn-solid" type="submit">إرسال الطلب</button>
+      <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
